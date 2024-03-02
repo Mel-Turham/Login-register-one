@@ -17,13 +17,13 @@
 
 .container-login {
 	background-color: #ffff;
-	box-shadow: 0 0 70px #dcdcdc;
+	/* box-shadow: 0 0 70px #dcdcdc; */
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	gap: 30px;
 	padding: 50px;
-	width: 65vw;
+	/* width: 65vw; */
 }
 
 .login-left {
