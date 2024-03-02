@@ -93,6 +93,26 @@
 	flex-direction: column;
 	gap: 1rem;
 }
+.container-fields .field-row {
+	position: relative;
+
+	width: fit-content;
+}
+
+.container-fields .field-row .ckeckpassword {
+	position: absolute;
+	top: 50%;
+	right: -40px;
+	height: 20px;
+	cursor: pointer;
+	width: 20px;
+	transform: translateY(-50%);
+	display: grid;
+	place-content: center;
+	font-size: 15px;
+
+	color: var(--fieldInput);
+}
 
 .container-fields input {
 	height: 40px;
@@ -104,6 +124,13 @@
 }
 .container-fields input::placeholder {
 	color: #a7a3ff;
+}
+
+.container-fields .error {
+	color: crimson;
+	font-size: 10px;
+	margin-top: -10px;
+	text-transform: capitalize;
 }
 .Login-form span {
 	text-align: end;
