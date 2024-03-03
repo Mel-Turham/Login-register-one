@@ -4,7 +4,7 @@ import Fb from '../../assets/Facebook.svg';
 import Ap from '../../assets/apple.svg';
 import Gg from '../../assets/google.svg';
 import { FaEyeSlash } from 'react-icons/fa';
-import { IoEyeSharp } from "react-icons/io5";
+import { IoEyeSharp } from 'react-icons/io5';
 import { Formik } from 'formik';
 import { useState } from 'react';
 const Login = () => {
@@ -40,7 +40,7 @@ const Login = () => {
 
 					if (!values.password) {
 						errors.password = 'the password is Required please';
-					} 
+					}
 					return errors;
 				}}
 				onSubmit={(values, { setSubmitting }) => {
@@ -60,8 +60,6 @@ const Login = () => {
 					isSubmitting,
 				}) => (
 					<form className='Login-form' onSubmit={handleSubmit}>
-						<h2>Sign In</h2>
-
 						<div className='container-fields'>
 							<div className='field-row'>
 								<input
@@ -88,7 +86,14 @@ const Login = () => {
 									value={values.password}
 									placeholder='Password...'
 								/>
-								<span className='ckeckpassword' onClick={()=> setIsShowPassword(currentState => !currentState)}>{isShowPassword ? <IoEyeSharp /> : <FaEyeSlash/>}</span>
+								<span
+									className='ckeckpassword'
+									onClick={() =>
+										setIsShowPassword((currentState) => !currentState)
+									}
+								>
+									{isShowPassword ? <IoEyeSharp /> : <FaEyeSlash />}
+								</span>
 							</div>
 							<p className='error'>
 								{errors.password && touched.password && errors.password}
