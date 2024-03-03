@@ -16,4 +16,5 @@ body {
 	align-items: center;
 	justify-content: center;
 	background: linear-gradient(132deg, #a7a3ff59, #8d92f0, #f0efff4e);
+	overflow: hidden;
 }
