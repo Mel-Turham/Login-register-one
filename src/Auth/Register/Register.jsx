@@ -4,7 +4,7 @@ import Ap from '../../assets/apple.svg';
 import Gg from '../../assets/google.svg';
 import './Register.css';
 import { Formik } from 'formik';
-import { MdError } from "react-icons/md";
+import { MdError } from 'react-icons/md';
 import * as Yup from 'yup';
 const Register = () => {
 	return (
@@ -66,7 +66,10 @@ const Register = () => {
 									{...formik.getFieldProps('email')}
 								/>
 								{formik.touched.email && formik.errors.email ? (
-									<p className='error'>{formik.errors.email}<MdError /></p>
+									<p className='error'>
+										{formik.errors.email}
+										<MdError />
+									</p>
 								) : null}
 							</div>
 							<div className='field-row'>
@@ -79,7 +82,10 @@ const Register = () => {
 								/>
 
 								{formik.touched.username && formik.errors.username ? (
-									<p className='error'>{formik.errors.username}<MdError /></p>
+									<p className='error'>
+										{formik.errors.username}
+										<MdError />
+									</p>
 								) : null}
 							</div>
 							<div className='field-row'>
@@ -91,7 +97,10 @@ const Register = () => {
 									{...formik.getFieldProps('phoneNumber')}
 								/>
 								{formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-									<p className='error'>{formik.errors.phoneNumber}<MdError /></p>
+									<p className='error'>
+										{formik.errors.phoneNumber}
+										<MdError />
+									</p>
 								) : null}
 							</div>
 							<div className='field-row'>
@@ -103,7 +112,10 @@ const Register = () => {
 									{...formik.getFieldProps('password')}
 								/>
 								{formik.touched.password && formik.errors.password ? (
-									<p className='error'>{formik.errors.password}<MdError /></p>
+									<p className='error'>
+										{formik.errors.password}
+										<MdError />
+									</p>
 								) : null}
 							</div>
 							<div className='field-row'>
@@ -115,7 +127,10 @@ const Register = () => {
 									{...formik.getFieldProps('confirmpwd')}
 								/>
 								{formik.touched.confirmpwd && formik.errors.confirmpwd ? (
-									<p className='error'>{formik.errors.confirmpwd}<MdError /></p>
+									<p className='error'>
+										{formik.errors.confirmpwd}
+										<MdError />
+									</p>
 								) : null}
 							</div>
 						</div>

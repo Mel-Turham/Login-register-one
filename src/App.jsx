@@ -1,13 +1,12 @@
-
-import Login from './Auth/Login/Login';
-// import Register from './Auth/Register/Register';
+// import Login from './Auth/Login/Login';
+import Register from './Auth/Register/Register';
 function App() {
-  return (
-    <>
-     <Login/>
-     {/* <Register/> */}
-    </>
-  )
+	return (
+		<>
+			{/* <Login/> */}
+			<Register />
+		</>
+	);
 }
 
-export default App
+export default App;
